@@ -1,0 +1,360 @@
+.App {
+  text-align: center;
+  background-color:#E6DDAF;
+}
+
+
+/* Navbar Container */
+nav {
+  background-color:#D66E6E ; /* Background color */
+  color:White; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo style */
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Links style */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size:25px;
+  font-weight: bold;
+
+
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Links hover effect */
+nav a:hover {
+  color: #D8C055 ; /* Change color on hover */
+}
+
+/* Active link style */
+nav a#home {
+  color: #D8C055  ; /* Set the color for the "Home" link */
+}
+
+/* Styling for Home Component */
+
+#homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color:#E6DDAF;
+    height: 100vh;
+}
+
+#content {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+#profilepic img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-bottom: 20px;
+  margin-top:90px;
+  margin-left:20px;
+  
+}
+
+#textarea  {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+  min-height: 100px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+
+
+/* Styling for Signin and Signup Forms */
+
+h2 {
+  text-align: center;
+}
+
+#Signin {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#Signin label,
+#Signin input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Signin label {
+  font-weight: bold;
+}
+
+#Signin input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#Signin button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#Signin button:hover {
+  background-color: #0056b3;
+}
+ /* Styling for Signup Form */
+
+#Signup {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#Signup label,
+#Signup input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Signup label {
+  font-weight: bold;
+}
+
+#Signup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#Signup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green color for signup button */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#Signup button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+#dashboard-popup{
+  justify-content:space-between;
+  position: fixed;
+  top:55px;
+  left:45%;
+  
+}
+/* Dashboard Link Styling */
+#dashboard-popup ul {
+  list-style: none; /* Remove bullets */
+}
+.dashboard-link {
+  list-style:none;
+  text-decoration: none;
+  color:white; /* Link color */
+  font-size:16px;
+  margin: 5px 10px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+
+  /* You can add more styling as needed */
+}
+
+.dashboard-link:hover {
+  color: #007bff; /* Change color on hover */
+  font-weight: bold; /* Make the text bold on hover */
+}
+
+/* Posts.css */
+
+/* Style for the container div */
+.post-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the text area */
+.post-textarea {
+  width:100%;
+  height:80%;
+  padding:10 px;
+  margin-bottom:10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  background-color:#F3F7AE ;
+  font-size:15px;
+
+}
+
+/* Style for the create post button */
+.post-button {
+  background-color: #D66E6E;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom:15px;
+}
+#post-feed{
+  flex: 1; 
+ 
+  max-width:800px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color:#DAE8EC ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual posts */
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom:5px;
+  padding:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#F3F7AE ;
+}
+
+
+/* Style for the delete button (the 'x') */
+.post-delete-button {
+  background-color:red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.submit-button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Like.css */
+#Like-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:5px;
+}
+
+#Like-button {
+  padding: 5px 5px; /* Reduced padding */
+  font-size: 10px; /* Reduced font size */
+  background: #60C3EE ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+#Like-likes {
+  margin-top: 5px; /* Reduced margin-top */
+  font-size: 16px; /* Reduced font size */
+}
+
+
+/* Comment.css */
+.comment-toggle{
+  color:blue;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.add-button {
+  background-color: #D66E6E;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px; /* Reduced padding */
+
+}
+
+.comment-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  margin-bottom: 5px;
+}
+#welcometext{
+ margin-left:40%;
+ margin-top:150px;
+}
+
+#welcometext img {
+  display:flex;
+  justify-content:center;
+  border-radius: 50%; /* Makes the image circular */
+  width: 150px; 
+  height: 150px; 
+  margin-left:90px; 
+
+  
+}
+
+
